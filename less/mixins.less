@@ -7,10 +7,12 @@
     align-items: @align;
 }
 
-.button(@width, @font-size, @background) {
+.button(@width, @font-size, @background, @color) {
     width: @width;
     background: @background;
-    padding: 1% 2%;
+    padding: 2% 2%;
     font-size: @font-size;
     text-align: center;
+    border-radius: 5px;
+    color: @color;
 }
