@@ -213,6 +213,14 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.home {
+  padding-top: 8%;
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 27%;
+  }
+}
 .home .intro .header-img {
   border-radius: 10px;
   max-width: 100%;
@@ -319,4 +327,53 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.contact {
+  width: 100%;
+  margin-bottom: 2.5%;
+  font-size: 2.2rem;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+.contact .contact-form {
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .contact .contact-form {
+    padding: 0 2%;
+  }
+}
+.contact .contact-form div label input {
+  width: 100%;
+  box-shadow: inset 0 1px 2px #ddd, 0 1px 0 #fff;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact .contact-form div label textarea {
+  width: 100%;
+  box-shadow: inset 0 1px 2px #ddd, 0 1px 0 #fff;
+  border: 1px solid #ccc;
+  background: #fff;
+  margin: 5px 0 15px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+.contact .contact-form div button {
+  width: 30%;
+  background: #22283A;
+  padding: 2% 2%;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 5px;
+  color: #F6F7F8;
+}
+.contact .contact-form div button:hover {
+  background: #F6F7F8;
+  color: #22283A;
+  cursor: pointer;
 }
