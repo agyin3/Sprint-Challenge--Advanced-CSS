@@ -3,11 +3,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>SpaceWalkers</title>
 
   <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -16,12 +18,21 @@
 
 <body>
 
- <!-- navigation code here -->
+  <nav class="navigation animated bounceInDown">
+    <h1 class="title">Space Walkers</h1>
+    <ul class="nav-wrap">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Sign In</a></li>
+    </ul>
+  </nav>
 
   <div class="container home">
 
     <header class="intro">
-       <!-- image code here -->
+       <img class="header-img" src="img/main-header.png" alt="Ariel view of earth from space">
 
       <h2>Lift Off</h2>
     
@@ -60,6 +71,29 @@
           <img src="img/space-walk.png" alt="Space walking astronaut">
       </div>
 
+    </section>
+
+    <section class="contact">
+      <h2>Subscribe Now</h2>
+      <form class="contact-form">
+        <div>
+            <label>
+                <span>Your Name: (required)</span> <br/>
+                <input type="text" placeholder="Please enter your name" tabindex="1" name="name" required autofocus>
+            </label>
+        </div>
+        
+        <div>
+            <label>
+                <span>Your Email: (required)</span> <br/>
+                <input type="email" placeholder="you@example.com" tabindex="2" name="email" required>
+            </label>
+        </div>
+        
+        <div>
+            <button name="submit" tabindex="6" type="submit" id="contact-submit">Subscribe</button>
+        </div>
+      </form>
     </section>
 
     <footer>
